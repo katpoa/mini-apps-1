@@ -1,0 +1,14 @@
+{
+  "name": "hrsf130-mini-apps-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katpoa/hrsf130-mini-apps-1.git"
+  },
+  "author": "Katie Poa"
+}

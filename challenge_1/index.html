@@ -1,2 +1,74 @@
-
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <style>
+      body {
+        /* background-image: url('xo.jpg'); */
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      h1 {
+        background-color: transparent;
+        float: clear;
+      }
+      table {
+        background-color: #FFDFE2;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px;
+        border-style: solid;
+      }
+      td {
+        width: 20px;
+        height: 20px;
+        padding: 10px 10px 10px 10px;
+        border: .5px;
+        border-style: solid;
+      }
+      th {
+        padding: 5px;
+        /* border-style: solid; */
+      }
+      .playerX {
+        background-image: url('star.png');
+      }
+      .playerO {
+        background-image: url('moon.jpg');
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>First Mini-app here we go!</h1>
+      <button>Start Over</button>
+      <h2 id="player"></h2>
+      <table id="table" class="table">
+        <thead>
+          <tr>
+            <th colspan="3">Tic Tac Toe</th>
+          </tr>
+        </thead>
+        <tbody class="table">
+          <tr>
+            <td id="1-1"></td>
+            <td id="1-2"></td>
+            <td id="1-3"></td>
+          </tr>
+          <tr>
+            <td id="2-1"></td>
+            <td id="2-2"></td>
+            <td id="2-3"></td>
+          </tr>
+          <tr>
+            <td id="3-1"></td>
+            <td id="3-2"></td>
+            <td id="3-3"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script type="text/javascript" src="app.js"></script>
+</html>
