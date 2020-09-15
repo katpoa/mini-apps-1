@@ -9,7 +9,8 @@
         background-size: 100% 100%; */
       /* }  */
       h1 {
-        background-color: transparent;
+        position: relative;
+        margin-left: 20%;
       }
       table {
         background-color: #FFDFE2;
@@ -20,8 +21,8 @@
         border-style: solid;
       }
       td {
-        width: 20px;
-        height: 20px;
+        width: 50px;
+        height: 50px;
         padding: 10px 10px 10px 10px;
         border: .5px;
         border-style: solid;
@@ -30,56 +31,64 @@
         padding: 5px;
         /* border-style: solid; */
       }
-      .playerX {
+      .Starlight {
         background-image: url('star.png');
         background-size: contain;
       }
-      .playerO {
+      .Moonlight {
         background-image: url('pink.png');
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size: cover;
         background-position-x: center;
         background-position-y: center;
+      }
+      h2, h3 {
+        text-align: center;
+      }
+      button {
+        position: relative;
+        margin-left: 30%;
       }
     </style>
   </head>
   <body>
     <h1>First Mini-app here we go!</h1>
-    <button>Start Over</button>
+    <button id="btn">Start Over</button>
     <h2 id="player"></h2>
-    <table class="table">
+    <table>
       <thead>
         <tr>
           <th colspan="3">Tic Tac Toe</th>
         </tr>
       </thead>
       <tbody class="table">
-        <tr id="1">
-          <td id="1-1"></td>
-          <td id="1-2"></td>
-          <td id="1-3"></td>
+        <tr id="row1">
+          <td class="one"></td>
+          <td class="two"></td>
+          <td class="three"></td>
           <!-- <td id="1-1"></td>
           <td id="1-2"></td>
           <td id="1-3"></td> -->
         </tr>
-        <tr id="2">
-          <td id="2-1"></td>
-          <td id="2-2"></td>
-          <td id="2-3"></td>
+        <tr id="row2">
+          <td class="one"></td>
+          <td class="two"></td>
+          <td class="three"></td>
           <!-- <td id="2-1"></td>
           <td id="2-2"></td>
           <td id="2-3"></td> -->
         </tr>
-        <tr id="3">
-          <td id="3-1"></td>
-          <td id="3-2"></td>
-          <td id="3-3"></td>
+        <tr id="row3">
+          <td class="one"></td>
+          <td class="two"></td>
+          <td class="three"></td>
           <!-- <td id="3-1"></td>
           <td id="3-2"></td>
           <td id="3-3"></td> -->
         </tr>
       </tbody>
     </table>
+    <h3 id="end"></h3>
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
