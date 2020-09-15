@@ -104,22 +104,16 @@ document.addEventListener('DOMContentLoaded', () => {
       if (squares[index] == document.querySelector('#row1 .three') || squares[index] == document.querySelector('#row3 .one') || squares[index] == document.querySelector('#row2 .two')) {
 
         var win1 = document.querySelector('#row1 .three').classList.length > 1;
-        console.log('top right', win1);
         var win12 = document.querySelector('#row3 .one').classList.length > 1
-        console.log('bottom left', win12);
         var win13 = document.querySelector('#row1 .three').classList.contains(player) === document.querySelector('#row2 .two').classList.contains(player) === document.querySelector('#row3 .one').classList.contains(player);
-        console.log('topright to bottomleft', win13);
         if(win1 && win12 && win13) {
           return true;
         }
       } else if (squares[index] == document.querySelector('#row1 .one') || squares[index] == document.querySelector('#row3 .three') || squares[index] == document.querySelector('#row2 .two')) {
         //check top-left to bottom-right diagonal
         var win2 = document.querySelector('#row1 .one').classList.length > 1;
-        console.log('top left', win2);
         var win21 = document.querySelector('#row3 .three').classList.length > 1;
-        console.log('bottom right', win21);
         var win22 = document.querySelector('#row1 .one').classList.contains(player) === document.querySelector('#row2 .two').classList.contains(player) === document.querySelector('#row3 .three').classList.contains(player);
-        console.log('topleft to bottomright', win22);
         if(win2 && win21 && win22) {
           return true;
         }
