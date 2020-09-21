@@ -13,7 +13,8 @@ module.exports = {
   },
 
   post: (req, res) => {
-    model.post((err, data) => {
+    const { field, newData } = req.body;
+    model.post(field, newData, (err, data) => {
       if (err) {
         res.status(400).send(err)
       } else {
@@ -21,6 +22,5 @@ module.exports = {
       }
     });
   }
-
 
 }
